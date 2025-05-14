@@ -7,3 +7,5 @@ dependencies:
   - jupyter_server
   - jupyterlite-core >=0.5.0,<0.6
   - jupyterlite-xeus >=3.0.0,<4
+  - libarchive-c  # Add this
+  - jupyterlab_server >=2.21.0  # Add this
