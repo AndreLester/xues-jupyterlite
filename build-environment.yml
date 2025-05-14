@@ -10,3 +10,4 @@ dependencies:
   - jupyterlite-xeus >=3.0.0,<4
   - python-libarchive-c
   - jupyterlab_server >=2.21.0  # Add this
+  - jupyterlab-filesystem-access

@@ -7,4 +7,3 @@ dependencies:
   - xeus-python
   - ipycanvas
   - xeus-javascript
-  - jupyterlab-filesystem-access
