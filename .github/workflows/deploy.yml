@@ -28,6 +28,9 @@ jobs:
           cache-environment: true
           cache-downloads: false
 
+      - name: Install libarchive
+        run: micromamba install -n base libarchive -c conda-forge
+
       - name: Build the JupyterLite site
         shell: bash -l {0}
         run: |
