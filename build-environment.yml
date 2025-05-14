@@ -1,9 +1,13 @@
 name: build-env
 channels:
   - conda-forge
+  - emscripten-forge
 dependencies:
   - python
   - pip
   - jupyter_server
   - jupyterlite-core >=0.5.0,<0.6
-  - jupyterlite-xeus>=3.0.0,<4
+  - jupyterlite-xeus >=3.0.0,<4
+  - jupyterlab_server  # Adding missing dependency for translations
+  - pyzmq >=17,<25     # Ensure it's resolvable with the new channels
+  - tornado >=6.2.0    # Include compatible version
