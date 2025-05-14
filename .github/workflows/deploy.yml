@@ -29,14 +29,14 @@ jobs:
           cache-environment: true
           cache-downloads: false
 
-      - name: Set up micromamba
-        run: |
-          micromamba create --yes --name xeus-kernel --platform emscripten-wasm32 \
-          -c conda-forge \
-          -c https://repo.mamba.pm/emscripten-forge \
-          jupyterlab pyzmq tornado
-          micromamba install --yes --name xeus-kernel \
-          -c conda-forge libarchive-c jupyterlab_server=2.21.0
+      # - name: Set up micromamba
+      #   run: |
+      #     micromamba create --yes --name xeus-kernel --platform emscripten-wasm32 \
+      #     -c conda-forge \
+      #     -c https://repo.mamba.pm/emscripten-forge \
+      #     jupyterlab pyzmq tornado
+      #     micromamba install --yes --name xeus-kernel \
+      #     -c conda-forge libarchive-c jupyterlab_server=2.21.0
 
       - name: Build the JupyterLite site
         shell: bash -l {0}
